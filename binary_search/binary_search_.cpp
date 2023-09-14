@@ -66,6 +66,7 @@ int binarySearchHelp(const vector<int>& inputVector, const int& target, int fron
     }
 
     if (target > inputVector.at(middleIndex)) {
+
         int lastIndex = inputVector.size() - 1;
         
         if (front + 1 == lastIndex) return binarySearchHelp(inputVector, target, end, end);
