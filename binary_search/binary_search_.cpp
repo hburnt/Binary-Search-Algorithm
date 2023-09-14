@@ -6,7 +6,6 @@ using namespace std;
 int binarySearch(const vector<int>& inputVector, const int& target, int front, int end);
 
 int main() {
-	cout << "Big Chnage";
 	return 0;
 }
 
