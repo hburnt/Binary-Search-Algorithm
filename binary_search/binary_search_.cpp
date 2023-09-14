@@ -25,7 +25,7 @@ int binarySearchHelp(const vector<int>& inputVector, const int& target, int fron
 int binarySearch(const vector<int>& inputVector, const int& target);
 
 int main() {
-    vector<int> vec1 = { 1, 2, 3, 4, 5, 7 };
+    vector<int> vec1 = { 1, 2, 2, 3, 4, 5, 7 };
 
     // Test case 1: Target exists in the vector
     int target1 = 3;
@@ -47,9 +47,13 @@ int main() {
     int target5 = 7;
     cout << "Target 7 found at index: " << binarySearch(vec1, target5) << endl; // Expected output: 5
 
-    // Test case 6: Target exosts at the front of the vector
+    // Test case 6: Target exists at the front of the vector
     int target6 = 1;
     cout << "Target 1 found at index: " << binarySearch(vec1, target6) << endl; // Expected output: 0
+
+    // Test case 7: Target is located in two different positions in the vector returns the first instance 
+    int target7 = 2;
+    cout << "Target 2 found at index: " << binarySearch(vec1, target7) << endl; // Expected output: 1
     return 0;
 }
 
